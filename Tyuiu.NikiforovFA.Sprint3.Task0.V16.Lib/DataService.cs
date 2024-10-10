@@ -8,11 +8,12 @@ namespace Tyuiu.NikiforovFA.Sprint3.Task0.V16.Lib
         {
             double res = 1;
 
-            for (int k = startValue; k <= stopValue; k++)
+            for (double k = startValue; k <= stopValue; k++)
             {
-                res *= Math.Pow((value / k), 3);
+                double d = (value / k);
+                res = res * (Math.Pow(d, 3));
             }
-            return res;
+            return Math.Round(res,3);
         }
     }
 }
