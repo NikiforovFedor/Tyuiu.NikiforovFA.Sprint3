@@ -14,7 +14,7 @@ namespace Tyuiu.NikiforovFA.Sprint3.Task7.V29.Lib
             {
                 if ((Math.Cos(i) - 2.0 * i) != 0)
                 {
-                    res[count] = Math.Round((((2 * i - 3) / ((Math.Cos(i) - 2 * i))) + 5 * i + 6), 2);
+                    res[count] = Math.Round(((2 * i - 3) / (Math.Cos(i) - 2 * i) + 5 * i - 6), 2);
                     count++;
                 }
                 else
