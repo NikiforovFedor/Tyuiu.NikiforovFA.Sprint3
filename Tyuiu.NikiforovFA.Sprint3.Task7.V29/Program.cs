@@ -23,7 +23,14 @@ namespace Tyuiu.NikiforovFA.Sprint3.Task7.V29
             Console.WriteLine("* Начальное значение: " + s);
             Console.WriteLine("* Конечное значение: " + e);
             Console.WriteLine("* Результат:                                                              *");
-            Console.WriteLine(ds.GetMassFunction(s, e));
+            int len = Math.Abs(e - s + 1);
+            int count = -5;
+            double[] res = ds.GetMassFunction(s, e);
+            for (int i = 0; i < len; i++)
+            {
+                Console.WriteLine($"{res[i]} - {count}");
+                count++;
+            }
 
 
         }
